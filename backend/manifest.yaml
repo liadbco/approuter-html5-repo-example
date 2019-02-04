@@ -1,0 +1,8 @@
+---
+applications:
+- name: demo-approuter-backend
+  host: i049056-demo-approuter-backend
+  memory: 128M
+
+  services:
+    - html5-apps-repo-uaa
