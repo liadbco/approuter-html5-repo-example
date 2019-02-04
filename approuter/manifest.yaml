@@ -1,0 +1,20 @@
+---
+applications:
+- name: demo-approuter
+  host: i049056-demo-approuter
+  memory: 256M
+
+  services:
+    - html5-apps-repo-uaa
+    - demo-approuter-html5-repo-app-runtime
+    - demo-approuter-destination
+
+env:
+   destinations: >
+            [
+              {
+                "name":"demo_approuter_be",
+                "url":"https://i049056-demo-approuter-backend.cfapps.sap.hana.ondemand.com",
+                "forwardAuthToken": true
+              }
+            ]
